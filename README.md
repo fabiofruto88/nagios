@@ -51,15 +51,15 @@ graph TD
 ## Arquitectura del Sistema
 ```mermaid
 flowchart TD
-    subgraph Docker Environment
-        N[Nagios Core\nPort: 8080] --> |Monitor| M[MySQL\nPort: 3306]
-        N --> |Monitor| W[NGINX\nPort: 8081]
-        M --> |Data| DB[(Database\ntestdb)]
-        W --> |Serve| H[HTML/Static\nContent]
+    subgraph Docker-Environment
+        N[Nagios Core\nPort: 8080] -->|Monitor| M[MySQL\nPort: 3306]
+        N -->|Monitor| W[NGINX\nPort: 8081]
+        M -->|Data| DB[(Database testdb)]
+        W -->|Serve| H[HTML/Static Content]
     end
-    U[User Browser] --> |HTTP| N
-    U --> |HTTP| W
-    A[Admin] --> |Configure| N```
+    U[User Browser] -->|HTTP| N
+    U -->|HTTP| W
+    A[Admin] -->|Configure| N```
 
 ## 1. Introducción y Requisitos
 
