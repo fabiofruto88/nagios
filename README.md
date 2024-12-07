@@ -59,7 +59,8 @@ flowchart TD
     end
     U[User Browser] -->|HTTP| N
     U -->|HTTP| W
-    A[Admin] -->|Configure| N```
+    A[Admin] -->|Configure| N
+```
 
 ## 1. Introducción y Requisitos
 
